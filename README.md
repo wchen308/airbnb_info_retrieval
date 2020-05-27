@@ -7,8 +7,6 @@ With Boston AirBnB data, we may be able to retrieve some information. The data f
 	1. What are busy time to visit Boston?
 	2. What do visitors like and dislike about their AirBnB journey in Boston?
 	3. What are general vibes for different neighborhoods in Boston?
-  
-Also, some technical skills and problems will be discussed.
 
 ## What are busy time to visit Boston?
 This calendar data includes price and availability info for 3585 listings. A listing is unavailable for 2 potential reasons:
@@ -28,5 +26,25 @@ In September, price hugely increases and availability hugely drops. Starting fro
 In general, with 2016-17 Boston AirBnB calendar data, April seems to be a busy month. More calendar years of data are recommended to further justify the overall trend and seasonally. 
 
 ## What do visitors like and dislike about their AirBnB journey in Boston?
+68k reviews from 2009 to 2016 were classified into positive, neutral and negative comments using TextBlob and NLTK packages. Therefore I counted and found out the popular n-gram words in positive and negative comments. Thus we know what visitors like and dislike about their AirBnB journey in Boston.
+
+93% of the reviews were classified as positive.
+![review_polarity.png](image/review_polarity.png)
+
+Here is an example of a positive review:
+![positive_review.png](image/positive_review.png)
+
+Here is an example of a neutral review:
+![neutral_review.png](image/neutral_review.png)
+
+Here is an example of a negative review:
+![negative_review.png](image/negative_review.png)
+
+Each text was tokenized, lemmatized and stopwords were removed. N-gram words were counted for positive and negative comments and 3-gram counts provide most information. In positive comments, short walk distance and great location were mostly mentioned, which implies that travelers do not need to rent a car like travelling in Los Angeles. Friendly host and clean apartment were also highly mentioned.
+![3grams_positive.png](image/3grams_positive.png)
+
+In negative comments, bad communication like 'never hear back from host' and 'difficult to get in touch with host' were highly mentioned. Also, messy and dirty kitchen were mentioned. These information tells travelers that travelers may choose an AirBnB in Boston based on their communication prior travel and a friendly host may probably lead travelers to one of those 93% positive experience.
+![3grams_negative.png](image/3grams_negative.png)
 
 ## What are vibes for different neighborhoods in Boston?
+
