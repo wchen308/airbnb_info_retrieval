@@ -17,7 +17,7 @@ This calendar data includes price and availability info for 3585 listings. A lis
 
 Hence, we can estimate the volume of visitors by both price and availability. When price rises up and availability drops down, there is a busy time to visit Boston.
 
-![datasize.png](image/datasize.png)
+![monthly_volume.png](image/monthly_volume.png)
 
 This figure shows the average price and overall availability of 3585 AirBnB listings in Boston by each month. From January to August, price increases and availability decreases. In April, price sharply increases and availability drops to the lowest among these 8 months, which implies that April is a busy month for Boston to host visitors.
 
